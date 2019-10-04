@@ -35,9 +35,11 @@ class StockInventoryLine(models.Model):
                             uom_id=False, package_id=False, prod_lot_id=False,
                             partner_id=False, company_id=False):
         res = super(StockInventoryLine, self).onchange_createline(
-            location_id, product_id, uom_id, package_id, prod_lot_id, partner_id, company_id)
+            location_id, product_id, uom_id, package_id,
+            prod_lot_id, partner_id, company_id)
         if 'value' in res:
-            standard_price = self.env['product.product'].browse(product_id).standard_price
+            standard_price = self.env['product.product'].browse(
+                product_id).standard_price
             res['value']['theoretical_std_price'] = standard_price
             res['value']['standard_price'] = standard_price
         return res

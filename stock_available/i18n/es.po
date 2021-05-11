@@ -27,7 +27,7 @@ msgstr "Disponible para reservar"
 #. module: stock_available
 #: view:product.template:stock_available.view_stock_available_kanban
 msgid "Available to promise:"
-msgstr ""
+msgstr "Disponible para reservar:"
 
 #. module: stock_available
 #: help:stock.config.settings,stock_available_mrp_based_on:0
@@ -44,12 +44,12 @@ msgstr ""
 #. module: stock_available
 #: field:stock.config.settings,module_stock_available_lot_locked:0
 msgid "Exclude blocked lots/serial numbers"
-msgstr ""
+msgstr "Excluir lotes/Nº Serie bloqueados"
 
 #. module: stock_available
 #: field:stock.config.settings,module_stock_available_sale:0
 msgid "Exclude goods already in sale quotations"
-msgstr ""
+msgstr "Excluir bienes que ya están en Presupuestos"
 
 #. module: stock_available
 #: field:stock.config.settings,module_stock_available_immediately:0

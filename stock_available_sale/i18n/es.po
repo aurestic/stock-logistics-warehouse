@@ -31,7 +31,7 @@ msgstr "Plantilla de producto"
 #. module: stock_available_sale
 #: field:product.product,quoted_qty:0 field:product.template,quoted_qty:0
 msgid "Quoted"
-msgstr ""
+msgstr "En presupuestos"
 
 #. module: stock_available_sale
 #: help:product.product,quoted_qty:0 help:product.template,quoted_qty:0
@@ -45,3 +45,8 @@ msgid ""
 "Location.\n"
 "Otherwise, this includes every Quotation."
 msgstr ""
+"Cantidad total de este producto que se encuentra en presupuestos (Pedidos en borrador)\n"
+"En el contexto de un solo almacén, este incluye los presupuestos procesados en este almacén\n"
+"En el contexto de una sola ubicación, este incluye todos los presupuestos procesados en cualquier "
+"almacén de esta ubicación o en cualquier hijo como lo hace en las ubicaciones\n"
+"En otro caso, incluye todos los presupuestos"
